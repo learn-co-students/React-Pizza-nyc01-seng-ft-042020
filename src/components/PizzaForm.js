@@ -7,10 +7,10 @@ const PizzaForm = () => {
             <input type="text" className="form-control" placeholder="Pizza Topping" value={
                 //Pizza Topping Should Go Here
                 null
-              }/>
+              } onChange={this.handleInput}/>
         </div>
         <div className="col">
-          <select value={null} className="form-control">
+          <select value={null} className="form-control" onChange={this.handleInput}>
             <option value="Small">Small</option>
             <option value="Medium">Medium</option>
             <option value="Large">Large</option>
