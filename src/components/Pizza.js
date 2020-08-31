@@ -1,11 +1,11 @@
-import React from "react"
+import React from "react";
 
 const Pizza = (props) => {
-  let {topping, size, vegetarian, id} = props.pizza
+  let {topping, size, vegetarian, id} = props.pizza;
 
   function handleClick(evt){
     console.log(evt.target)
-  }
+  };
 
   return(
     <tr>
@@ -21,7 +21,7 @@ const Pizza = (props) => {
           </button>
       </td>
     </tr>
-  )
-}
+  );
+};
 
-export default Pizza
+export default Pizza;

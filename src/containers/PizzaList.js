@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Pizza from '../components/Pizza'
+import Pizza from '../components/Pizza';
 
 class PizzaList extends Component {
 
@@ -9,7 +9,8 @@ class PizzaList extends Component {
         pizza={pizzaPOJO}
         key={pizzaPOJO.id}
       />
-    })
+    });
+
     return (
       <table className="table table-striped">
         <thead>
@@ -27,8 +28,7 @@ class PizzaList extends Component {
         </tbody>
       </table>
     );
-  }
-
-}
+  };
+};
 
 export default PizzaList;

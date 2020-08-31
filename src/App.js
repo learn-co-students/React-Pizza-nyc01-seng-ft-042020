@@ -1,14 +1,14 @@
 import React, { Component, Fragment } from 'react';
-import Header from './components/Header'
-import PizzaForm from './components/PizzaForm'
-import PizzaList from './containers/PizzaList'
+import Header from './components/Header';
+import PizzaForm from './components/PizzaForm';
+import PizzaList from './containers/PizzaList';
 
 class App extends Component {
 
   state ={
     pizzaList: [],
     pizzaForm: ""
-  }
+  };
 
   componentDidMount(){
     fetch("http://localhost:3000/pizzas")
@@ -18,7 +18,7 @@ class App extends Component {
         pizzaList: pizzas
       })
     })
-  }
+  };
 
   renderToForm = () => {
     
@@ -35,7 +35,7 @@ class App extends Component {
         />
       </Fragment>
     );
-  }
-}
+  };
+};
 
 export default App;

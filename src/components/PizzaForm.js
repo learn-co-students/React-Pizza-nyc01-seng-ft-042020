@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const PizzaForm = () => {
   return(
@@ -34,8 +34,7 @@ const PizzaForm = () => {
           <button type="submit" className="btn btn-success" onClick={console.log}>Submit</button>
         </div>
       </div>
+  );
+};
 
-  )
-}
-
-export default PizzaForm
+export default PizzaForm;
